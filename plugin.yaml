@@ -1,0 +1,15 @@
+name: cronforge
+version: "0.1.0"
+description: "Compile recurring cron jobs into zero-token scripts — cronforge reads real run histories, proves which jobs are deterministic, generates a replay script with recorded assertions, and rolls back automatically if the script ever fails."
+author: Eike Ahlers
+kind: standalone
+requires_hermes: ">=0.20.2"
+provides_tools:
+  - cronforge_scan
+  - cronforge_compile
+  - cronforge_activate
+  - cronforge_verify
+  - cronforge_rollback
+provides_hooks:
+  - post_tool_call
+  - on_session_end

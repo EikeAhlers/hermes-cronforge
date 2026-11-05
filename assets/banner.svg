@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="320" viewBox="0 0 1200 320" role="img" aria-label="cronforge — compile proven cron jobs into zero-token scripts">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0b1020"/>
+      <stop offset="100%" stop-color="#161d33"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#5eead4"/>
+      <stop offset="100%" stop-color="#818cf8"/>
+    </linearGradient>
+    <linearGradient id="hot" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#fb7185"/>
+      <stop offset="100%" stop-color="#f59e0b"/>
+    </linearGradient>
+    <style>
+      .title { font: 700 64px/1 "Segoe UI", Inter, system-ui, sans-serif; letter-spacing: -1.5px; fill: #f8fafc; }
+      .tag { font: 400 22px/1.4 "Segoe UI", Inter, system-ui, sans-serif; fill: #94a3b8; }
+      .lbl { font: 600 15px/1 "Segoe UI", Inter, system-ui, sans-serif; fill: #cbd5e1; }
+      .mono { font: 500 15px/1 "Cascadia Mono", Consolas, monospace; fill: #e2e8f0; }
+      .small { font: 500 13px/1 "Segoe UI", Inter, system-ui, sans-serif; fill: #64748b; }
+      .pipe { stroke: #334155; stroke-width: 2; fill: none; }
+    </style>
+  </defs>
+
+  <rect width="1200" height="320" fill="url(#bg)"/>
+  <g opacity="0.18" stroke="#38bdf8" stroke-width="1">
+    <path d="M0 240 H1200"/><path d="M0 280 H1200"/><path d="M960 0 V320"/>
+  </g>
+
+  <text class="title" x="64" y="104">cronforge</text>
+  <text class="tag" x="64" y="146">Proven-deterministic cron jobs → zero-token scripts.</text>
+  <text class="tag" x="64" y="176" opacity="0.75">Evidence from real runs · exit codes asserted · agent takes over on drift.</text>
+
+  <!-- pipeline -->
+  <g transform="translate(64, 210)">
+    <rect x="0" y="0" width="250" height="72" rx="12" fill="#1e293b" stroke="#475569"/>
+    <text class="lbl" x="18" y="28">agent cron job</text>
+    <text class="mono" x="18" y="52">4,274 tokens / run</text>
+
+    <path class="pipe" d="M258 36 H318"/>
+
+    <rect x="326" y="0" width="250" height="72" rx="12" fill="#0f2b28" stroke="#2dd4bf"/>
+    <text class="lbl" x="344" y="28">ledger + analysis</text>
+    <text class="mono" x="344" y="52">2 runs · 2 steps · ✔ match</text>
+
+    <path class="pipe" d="M584 36 H644"/>
+
+    <rect x="652" y="0" width="250" height="72" rx="12" fill="#111a3a" stroke="#818cf8"/>
+    <text class="lbl" x="670" y="28">compiled script</text>
+    <text class="mono" x="670" y="52">assertions + self-heal</text>
+
+    <path class="pipe" d="M910 36 H970"/>
+
+    <rect x="978" y="0" width="158" height="72" rx="12" fill="#0f2b28" stroke="#34d399"/>
+    <text class="lbl" x="996" y="28">0 tokens</text>
+    <text class="mono" x="996" y="52">every run</text>
+  </g>
+
+  <rect x="0" y="0" width="1200" height="6" fill="url(#accent)"/>
+  <text class="small" x="1136" y="300" text-anchor="end">hermes plugin · MIT</text>
+</svg>
